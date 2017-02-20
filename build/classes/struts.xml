@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE struts PUBLIC
+	"-//Apache Software Foundation//DTD Struts Configuration 2.3//EN"
+	"http://struts.apache.org/dtds/struts-2.3.dtd">
+<struts>
+	<constant name="struts.action.extension" value="action,,do"></constant> <!-- 表示后缀可以是.action或者空格或者.do都可以访问action -->
+	<constant name="struts.enable.DynamicMethodInvocation" value="true"></constant> <!-- 开启动态方法 -->
+	<constant name="struts.multipart.maxSize" value="20971520"></constant> <!-- 配置文件上传的最大大小 -->
+	
+	<package name="my-struts" extends="struts-default">
+		
+	</package>
+	
+	<include file="struts_article.xml"></include>
+</struts>
